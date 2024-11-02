@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Notation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2a344e;
+            color: #21f9ec;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #21f9ec;
+        }
+        p, ul, pre {
+            color: #c7e8e8;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .btn-custom {
+            background-color: #21f9ec;
+            color: #2a344e;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #2a344e;
+            color: #21f9ec;
+            border: 1px solid #21f9ec;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Understanding Sigma Notation (Σ)</h1>
+
+        <h2>1. Meaning in Greek Language</h2>
+        <ul>
+            <li>Sigma (Σ, σ, ς) is the 18th letter of the Greek alphabet. In Greek, the lowercase forms are "σ" (used generally) and "ς" (used only at the end of a word).</li>
+            <li>In the Greek language, "sigma" signifies “sum” or “total” in certain contexts, which is why it was adopted to represent summation in mathematics.</li>
+        </ul>
+
+        <h2>2. Sigma Notation in Mathematics</h2>
+        <p>In mathematics, capital Sigma (Σ) is used to denote the sum of a sequence of numbers. This notation is widely known as <strong>sigma notation</strong>.</p>
+        <p>Sigma notation provides a concise way to write the sum of a sequence without having to write out each term individually, which is especially useful for long sequences or patterns.</p>
+
+        <h2>3. Basic Structure of Sigma Notation</h2>
+        <p>Sigma notation for summation looks like this:</p>
+        <pre>∑<sub>i=a</sub><sup>b</sup> f(i)</pre>
+        <p>This expression is read as:</p>
+        <ul>
+            <li><strong>Sum of f(i) from i = a to i = b</strong></li>
+            <li>f(i) is the <strong>term or expression</strong> we are summing.</li>
+            <li>i is the <strong>index of summation</strong> (sometimes also k or n are used instead of i).</li>
+            <li>a is the <strong>lower limit</strong> of summation (the starting value of i).</li>
+            <li>b is the <strong>upper limit</strong> of summation (the ending value of i).</li>
+        </ul>
+
+        <h3>Example:</h3>
+        <pre>∑<sub>i=1</sub><sup>5</sup> i<sup>2</sup> = 1<sup>2</sup> + 2<sup>2</sup> + 3<sup>2</sup> + 4<sup>2</sup> + 5<sup>2</sup> = 1 + 4 + 9 + 16 + 25 = 55</pre>
+
+        <h2>4. Rules and Properties of Sigma Notation</h2>
+        <h3>1. Constants Rule</h3>
+        <p>If you are summing a constant c, then you can factor it out of the summation:</p>
+        <pre>∑<sub>i=a</sub><sup>b</sup> c = c(b - a + 1)</pre>
+
+        <h3>2. Distributive Property</h3>
+        <p>You can split a sum of two terms into two separate sums:</p>
+        <pre>∑<sub>i=a</sub><sup>b</sup> (f(i) + g(i)) = ∑<sub>i=a</sub><sup>b</sup> f(i) + ∑<sub>i=a</sub><sup>b</sup> g(i)</pre>
+
+        <h3>3. Linearity of Summation</h3>
+        <p>If there is a constant multiplied with a function, it can be factored out:</p>
+        <pre>∑<sub>i=a</sub><sup>b</sup> c * f(i) = c * ∑<sub>i=a</sub><sup>b</sup> f(i)</pre>
+
+        <h3>4. Change of Index</h3>
+        <p>The summation index can be shifted as long as you adjust the limits accordingly.</p>
+
+        <h3>5. Combining Sums with the Same Limits</h3>
+        <p>If you have two summations with the same limits, you can combine them:</p>
+        <pre>∑<sub>i=a</sub><sup>b</sup> f(i) + ∑<sub>i=a</sub><sup>b</sup> g(i) = ∑<sub>i=a</sub><sup>b</sup> (f(i) + g(i))</pre>
+
+        <h2>5. Common Uses of Sigma Notation</h2>
+        <ul>
+            <li><strong>Calculating series:</strong> Like the sum of an arithmetic or geometric series.</li>
+            <li><strong>Statistics:</strong> Summing up data points, mean calculations, variances, and standard deviations.</li>
+            <li><strong>Calculus:</strong> In Riemann sums, which approximate the area under a curve.</li>
+            <li><strong>Probability:</strong> Summing probabilities over events in a sample space.</li>
+        </ul>
+
+        <h2>6. Special Summations and Formulas</h2>
+        <ul>
+            <li><strong>Sum of the first n natural numbers:</strong><br>
+            <pre>∑<sub>i=1</sub><sup>n</sup> i = n(n + 1)/2</pre></li>
+            
+            <li><strong>Sum of the squares of the first n natural numbers:</strong><br>
+            <pre>∑<sub>i=1</sub><sup>n</sup> i<sup>2</sup> = n(n + 1)(2n + 1)/6</pre></li>
+            
+            <li><strong>Sum of the cubes of the first n natural numbers:</strong><br>
+            <pre>∑<sub>i=1</sub><sup>n</sup> i<sup>3</sup> = (n(n + 1)/2)<sup>2</sup></pre></li>
+        </ul>
+
+        <h2>7. Infinite Series and Sigma Notation</h2>
+        <p>In calculus, sigma notation can represent <strong>infinite series</strong>. For example, the sum of an infinite geometric series is written as:</p>
+        <pre>∑<sub>i=0</sub><sup>∞</sup> ar<sup>i</sup> = a / (1 - r) for |r| &lt; 1</pre>
+
+        <h2>Summary</h2>
+        <ul>
+            <li><strong>Capital Sigma (Σ)</strong> represents summation, a fundamental operation in mathematics.</li>
+            <li>It simplifies the expression of long or complex sums.</li>
+            <li>Sigma notation has useful properties that help simplify expressions, including rules for constants, distributive properties, and change of index.</li>
+            <li>Sigma notation is extensively used in statistics, calculus, probability, and various series.</li>
+        </ul>
+
+        <!-- Secret Button -->
+        <div class="text-center mt-4">
+            <a href="/secret" class="btn btn-custom">Secret</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
